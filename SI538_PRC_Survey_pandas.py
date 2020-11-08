@@ -27,18 +27,15 @@ def change_comma(response):
     return resp_wout_comma
 print(f"test: change_comma \n {change_comma('Mailed pamphlets, flyers, or newsletters,The Capital Area Recycling And Trash website,The City of Lansing social media pages,The Recycle Coach and/or Lansing Connect app')}")
 
-def extract_multi_resp(dataframe):
-    q_w_multi_resp = ['current_info_receipt', 'how_do_you_want_info', 'recyclable_paper_disposal', 'nonrecyclable_paper_disposal',
-       'cardboard_boxboard_disposal', 'recyclable_glass_disposal', 'specialty_glass_disposal', 'recyclable_plastics_disposal',
-       'plastic_bag_disposal', 'bulky_plastic_disposal', 'polystyrene_foam_disposal', 'recyclable_metals_disposal',
-       'specialty_metals_disposal', 'e_waste_disposal', 'misc_items_disposal', 'accepted_item_in_trash', 'accepted_item_in_recycling', 
-       'not_accepted_item_in_trash', 'not_accepted_item_in_recycling', 'unsure_item_in_trash', 'unsure_item_in_recycling',
-       'specialty_recycle_dropoff']
-    #for key, value in dataframe.items():
-    #    if key is in q_w_multi_resp:
-    #        for value in column:
-    #            if
-#    return
+def extract_multi_resp(response):
+    if ',' in response:
+        ext_resps = []
+        new_resp = response.split(',')
+        #print(new_resp)
+        ext_resps.append(new_resp)
+        return ext_resps
+    else:
+        pass
 
 #rename columns
 df.rename(columns={'Duration (in seconds)': 'duration_in_secs',
@@ -92,6 +89,12 @@ print(rec_resps.columns)
 #replace commas in multi-response questions
 rec_resps['current_info_receipt'] = rec_resps['current_info_receipt'].apply(change_comma)
 rec_resps['how_do_you_want_info'] = rec_resps['how_do_you_want_info'].apply(change_comma)
-print(f"test: change commas \n {rec_resps['how_do_you_want_info']}")
+rec_resps['what_happens_unsure'] = rec_resps['what_happens_unsure'].apply(change_comma)
+print(f"test: change commas \n {rec_resps['what_happens_unsure']}")
 
 #extract multiple responses
+rec_resps.applymap(extract_multi_resp)
+print(f"test extract multi-response: {rec_resps.iloc[5]}")
+
+#test .csv file write
+rec_resps.to_csv('recorded_responses_wlists.csv',index=False, encoding="utf-8")
