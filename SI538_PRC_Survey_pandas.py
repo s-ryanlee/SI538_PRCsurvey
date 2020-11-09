@@ -29,13 +29,10 @@ print(f"test: change_comma \n {change_comma('Mailed pamphlets, flyers, or newsle
 
 def extract_multi_resp(response):
     if ',' in response:
-        ext_resps = []
         new_resp = response.split(',')
-        #print(new_resp)
-        ext_resps.append(new_resp)
-        return ext_resps
     else:
-        pass
+        new_resp = response
+    return new_resp
 
 #rename columns
 df.rename(columns={'Duration (in seconds)': 'duration_in_secs',
@@ -67,8 +64,9 @@ cols = df.columns.tolist()
 cols.insert(1, cols[-2])
 cols.insert(3, cols[-1])
 del cols[-2:]
-print(f"test: rearrange columns \n {cols}")
+#print(f"test: rearrange columns \n {cols}")
 df = df[cols]
+
 
 #filter responses on survey circulation dates
 circulation_dates = ['2020-10-19', '2020-10-20', '2020-10-21', '2020-10-22', '2020-10-23', '2020-10-24', '2020-10-25',
@@ -78,23 +76,28 @@ rec_resps = df.loc[circ_filt]
 print(f"test: filter on release date \n {rec_resps.iloc[0:5]}")
 
 #test .csv file write
-rec_resps.to_csv('recorded_responses.csv',index=False, encoding="utf-8")
+#rec_resps.to_csv('recorded_responses.csv',index=False, encoding="utf-8")
 
 #Fill NaN
 rec_resps.fillna('NA', inplace=True)
-print(f"test nan: {rec_resps}")
+#print(f"test nan: {rec_resps}")
 
-print(rec_resps.columns)
+#test check columns
+#print(rec_resps.columns)
 
 #replace commas in multi-response questions
 rec_resps['current_info_receipt'] = rec_resps['current_info_receipt'].apply(change_comma)
 rec_resps['how_do_you_want_info'] = rec_resps['how_do_you_want_info'].apply(change_comma)
 rec_resps['what_happens_unsure'] = rec_resps['what_happens_unsure'].apply(change_comma)
-print(f"test: change commas \n {rec_resps['what_happens_unsure']}")
+#print(f"test: change commas \n {rec_resps['what_happens_unsure']}")
 
 #extract multiple responses
-rec_resps.applymap(extract_multi_resp)
-print(f"test extract multi-response: {rec_resps.iloc[5]}")
+rec_resps = rec_resps.applymap(extract_multi_resp)
+#print(f"test extract multi-response: {rec_resps.iloc[5]}")
+
+#check type
+#print(type(rec_resps.loc[5, 'current_info_receipt']))
+#print(f"test: check type \n {rec_resps['current_info_receipt'].dtypes}")
 
 #test .csv file write
 rec_resps.to_csv('recorded_responses_wlists.csv',index=False, encoding="utf-8")
