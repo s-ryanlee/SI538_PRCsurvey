@@ -103,18 +103,21 @@ rec_resps['what_happens_unsure'] = rec_resps['what_happens_unsure'].apply(change
 rec_resps.to_csv('recorded_responses_wlists.csv',index=False, encoding="utf-8")
 
 #create dummy dataframes
-org = "A school, commercial business, and/or my place of work"
-compan = "Friends, family, and/or neighbors"
-paper = "Mailed pamphlets, flyers, or newsletters"
+org = "A school/commercial business/and/or my place of work"
+compan = "Friends/family/and/or neighbors"
+paper = "Mailed pamphlets/flyers/or newsletters"
 cart = "Information on my recycling cart"
-website = "The Capital Area Recycling And Trash website"
+website1 = "The Capital Area Recycling And Trash website"
+website2 = "The Capital Area Recycling and Trash website"
 social_med = "The City of Lansing social media pages"
 apps = "The Recycle Coach and/or Lansing Connect app"
-q1n2_resps = [org, compan, paper, cart, website, social_med, apps]
-q12_resps = []
-for response in q1n2_resps:
-    response = change_comma(response)
-    q12_resps.append(response)
+q1_resps = [org, compan, paper, cart, website1, social_med, apps]
+q2_resps = [org, compan, paper, cart, website2, social_med, apps]
+#q12_resps = []
+#for response in q1n2_resps:
+#    new_response = change_comma(response)
+#    print(response)
+#    q12_resps.append(response)
 #print(q12_resps)
 
 trash = "Trash Cart"
@@ -156,106 +159,106 @@ dispose_cols = ['trash', 'recycle', 'dropoff', 'other']
 current_info_dummy = rec_resps[['responseid', 'current_info_receipt']]
 i = 0
 for col in info_cols:
-    current_info_dummy[col] = current_info_dummy['current_info_receipt'].str.contains(q12_resps[i], regex=False)
+    current_info_dummy[col] = current_info_dummy['current_info_receipt'].str.contains(q1_resps[i], regex=False)
     i +=1
-current_info_dummy.to_csv('current_info_dummy_test.csv',index=False, encoding="utf-8")
+current_info_dummy.to_csv('current_info_dummy.csv',index=False, encoding="utf-8")
 
 #want info dummy
 want_info_dummy = rec_resps[['responseid', 'how_do_you_want_info']]
 i = 0
 for col in info_cols:
-    want_info_dummy[col] = want_info_dummy['how_do_you_want_info'].str.contains(q12_resps[i], regex=False)
+    want_info_dummy[col] = want_info_dummy['how_do_you_want_info'].str.contains(q2_resps[i], regex=False)
     i +=1
-want_info_dummy.to_csv('want_info_dummy_test.csv',index=False, encoding="utf-8")
+want_info_dummy.to_csv('want_info_dummy.csv',index=False, encoding="utf-8")
 
 #disposal dummies
 recyclable_paper_dummy = rec_resps[['responseid', "recyclable_paper_disposal"]]
 i = 0
 for col in dispose_cols:
-    recyclable_paper_dummy[col] = recyclable_paper_dummy['recyclable_paper_disposal'].str.contains(q12_resps[i], regex=False)
+    recyclable_paper_dummy[col] = recyclable_paper_dummy['recyclable_paper_disposal'].str.contains(q3_resps[i], regex=False)
     i +=1
-recyclable_paper_dummy.to_csv('recyclable_paper_dummy_test.csv',index=False, encoding="utf-8")
+recyclable_paper_dummy.to_csv('recyclable_paper_dummy.csv',index=False, encoding="utf-8")
 
 nonrecyclable_paper_dummy = rec_resps[['responseid', "nonrecyclable_paper_disposal"]]
 i = 0
 for col in dispose_cols:
-    nonrecyclable_paper_dummy[col] = nonrecyclable_paper_dummy['nonrecyclable_paper_disposal'].str.contains(q12_resps[i], regex=False)
+    nonrecyclable_paper_dummy[col] = nonrecyclable_paper_dummy['nonrecyclable_paper_disposal'].str.contains(q3_resps[i], regex=False)
     i +=1
-nonrecyclable_paper_dummy.to_csv('nonrecyclable_paper_dummy_test.csv',index=False, encoding="utf-8")
+nonrecyclable_paper_dummy.to_csv('nonrecyclable_paper_dummy.csv',index=False, encoding="utf-8")
 
 cardboard_boxboard_dummy = rec_resps[['responseid', "cardboard_boxboard_disposal" ]]
 i = 0
 for col in dispose_cols:
-    cardboard_boxboard_dummy[col] = cardboard_boxboard_dummy["cardboard_boxboard_disposal" ].str.contains(q12_resps[i], regex=False)
+    cardboard_boxboard_dummy[col] = cardboard_boxboard_dummy["cardboard_boxboard_disposal" ].str.contains(q3_resps[i], regex=False)
     i +=1
-cardboard_boxboard_dummy.to_csv('cardboard_boxboard_dummy_test.csv',index=False, encoding="utf-8")
+cardboard_boxboard_dummy.to_csv('cardboard_boxboard_dummy.csv',index=False, encoding="utf-8")
 
 recyclable_glass_dummy = rec_resps[['responseid',"recyclable_glass_disposal"]]
 i = 0
 for col in dispose_cols:
-    recyclable_glass_dummy[col] = recyclable_glass_dummy["recyclable_glass_disposal"].str.contains(q12_resps[i], regex=False)
+    recyclable_glass_dummy[col] = recyclable_glass_dummy["recyclable_glass_disposal"].str.contains(q3_resps[i], regex=False)
     i +=1
-recyclable_glass_dummy.to_csv('recyclable_glass_dummy_test.csv',index=False, encoding="utf-8")
+recyclable_glass_dummy.to_csv('recyclable_glass_dummy.csv',index=False, encoding="utf-8")
 
 specialty_glass_dummy = rec_resps[['responseid',"specialty_glass_disposal"]]
 i = 0
 for col in dispose_cols:
-    specialty_glass_dummy[col] = specialty_glass_dummy["specialty_glass_disposal"].str.contains(q12_resps[i], regex=False)
+    specialty_glass_dummy[col] = specialty_glass_dummy["specialty_glass_disposal"].str.contains(q3_resps[i], regex=False)
     i +=1
-specialty_glass_dummy.to_csv('specialty_glass_dummy_test.csv',index=False, encoding="utf-8")
+specialty_glass_dummy.to_csv('specialty_glass_dummy.csv',index=False, encoding="utf-8")
 
 recyclable_plastics_dummy = rec_resps[['responseid',"recyclable_plastics_disposal"]]
 i = 0
 for col in dispose_cols:
-    recyclable_plastics_dummy[col] = recyclable_plastics_dummy["recyclable_plastics_disposal"].str.contains(q12_resps[i], regex=False)
+    recyclable_plastics_dummy[col] = recyclable_plastics_dummy["recyclable_plastics_disposal"].str.contains(q3_resps[i], regex=False)
     i +=1
-recyclable_plastics_dummy.to_csv('recyclable_plastics_dummy_test.csv',index=False, encoding="utf-8")
+recyclable_plastics_dummy.to_csv('recyclable_plastics_dummy.csv',index=False, encoding="utf-8")
 
 plastic_bag_dummy = rec_resps[['responseid',"plastic_bag_disposal"]]
 i = 0
 for col in dispose_cols:
-    plastic_bag_dummy[col] = plastic_bag_dummy["plastic_bag_disposal"].str.contains(q12_resps[i], regex=False)
+    plastic_bag_dummy[col] = plastic_bag_dummy["plastic_bag_disposal"].str.contains(q3_resps[i], regex=False)
     i +=1
-plastic_bag_dummy.to_csv('plastic_bag_dummy_test.csv',index=False, encoding="utf-8")
+plastic_bag_dummy.to_csv('plastic_bag_dummy.csv',index=False, encoding="utf-8")
 
 bulky_plastic_dummy = rec_resps[['responseid',"bulky_plastic_disposal"]]
 i = 0
 for col in dispose_cols:
-    bulky_plastic_dummy[col] = bulky_plastic_dummy["bulky_plastic_disposal"].str.contains(q12_resps[i], regex=False)
+    bulky_plastic_dummy[col] = bulky_plastic_dummy["bulky_plastic_disposal"].str.contains(q3_resps[i], regex=False)
     i +=1
-bulky_plastic_dummy.to_csv('bulky_plastic_dummy_test.csv',index=False, encoding="utf-8")
+bulky_plastic_dummy.to_csv('bulky_plastic_dummy.csv',index=False, encoding="utf-8")
 
 polystyrene_dummy = rec_resps[['responseid',"polystyrene_foam_disposal"]]
 i = 0
 for col in dispose_cols:
-    polystyrene_dummy[col] = polystyrene_dummy["polystyrene_foam_disposal"].str.contains(q12_resps[i], regex=False)
+    polystyrene_dummy[col] = polystyrene_dummy["polystyrene_foam_disposal"].str.contains(q3_resps[i], regex=False)
     i +=1
-polystyrene_dummy.to_csv('polystyrene_dummy_test.csv',index=False, encoding="utf-8")
+polystyrene_dummy.to_csv('polystyrene_dummy.csv',index=False, encoding="utf-8")
 
 recyclable_metals_disposal_dummy = rec_resps[['responseid',"recyclable_metals_disposal"]]
 i = 0
 for col in dispose_cols:
-    recyclable_metals_disposal_dummy[col] = recyclable_metals_disposal_dummy["recyclable_metals_disposal"].str.contains(q12_resps[i], regex=False)
+    recyclable_metals_disposal_dummy[col] = recyclable_metals_disposal_dummy["recyclable_metals_disposal"].str.contains(q3_resps[i], regex=False)
     i +=1
-recyclable_metals_disposal_dummy.to_csv('recyclable_metals_disposal_dummy_test.csv',index=False, encoding="utf-8")
+recyclable_metals_disposal_dummy.to_csv('recyclable_metals_disposal_dummy.csv',index=False, encoding="utf-8")
 
 specialty_metals_disposal_dummy = rec_resps[['responseid',"specialty_metals_disposal"]]
 i = 0
 for col in dispose_cols:
-    specialty_metals_disposal_dummy[col] = specialty_metals_disposal_dummy["specialty_metals_disposal"].str.contains(q12_resps[i], regex=False)
+    specialty_metals_disposal_dummy[col] = specialty_metals_disposal_dummy["specialty_metals_disposal"].str.contains(q3_resps[i], regex=False)
     i +=1
-specialty_metals_disposal_dummy.to_csv('specialty_metals_disposal_dummy_test.csv',index=False, encoding="utf-8")
+specialty_metals_disposal_dummy.to_csv('specialty_metals_disposal_dummy.csv',index=False, encoding="utf-8")
 
 e_waste_dummy = rec_resps[['responseid',"e_waste_disposal"]]
 i = 0
 for col in dispose_cols:
-    e_waste_dummy[col] = e_waste_dummy["e_waste_disposal"].str.contains(q12_resps[i], regex=False)
+    e_waste_dummy[col] = e_waste_dummy["e_waste_disposal"].str.contains(q3_resps[i], regex=False)
     i +=1
-e_waste_dummy.to_csv('e_waste_dummy_test.csv',index=False, encoding="utf-8")
+e_waste_dummy.to_csv('e_waste_dummy.csv',index=False, encoding="utf-8")
 
 misc_items_dummy = rec_resps[['responseid',"misc_items_disposal"]]
 i = 0
 for col in dispose_cols:
-    misc_items_dummy[col] = misc_items_dummy["misc_items_disposal"].str.contains(q12_resps[i], regex=False)
+    misc_items_dummy[col] = misc_items_dummy["misc_items_disposal"].str.contains(q3_resps[i], regex=False)
     i +=1
-misc_items_dummy.to_csv('misc_items_dummy_test.csv',index=False, encoding="utf-8")
+misc_items_dummy.to_csv('misc_items_dummy.csv',index=False, encoding="utf-8")

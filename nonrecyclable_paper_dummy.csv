@@ -1,0 +1,541 @@
+responseid,nonrecyclable_paper_disposal,trash,recycle,dropoff,other
+R_2dL7Dr8dZTCTKwT,NA,False,False,False,False
+R_1DvFTBxrtp3Jn7k,Trash Cart,True,False,False,False
+R_2S1VkDbgNkHOtu2,Trash Cart,True,False,False,False
+R_WAw1Y2Lth9AzEt3,"Trash Cart,Recycling Cart",True,True,False,False
+R_3NXr97CGD8N3bmg,Trash Cart,True,False,False,False
+R_3oMg4oXhX3tSVRX,Trash Cart,True,False,False,False
+R_Q4fpQoXlaK7Mich,Trash Cart,True,False,False,False
+R_3kiLunV05z4Szeh,Trash Cart,True,False,False,False
+R_1KxmkexzynkSl95,Trash Cart,True,False,False,False
+R_tSROmSFI65uhA2J,Trash Cart,True,False,False,False
+R_3EtDMDxfllMlOjQ,NA,False,False,False,False
+R_2tLMUvK1EH7DLeG,Trash Cart,True,False,False,False
+R_23488oCmFcoTcSo,Trash Cart,True,False,False,False
+R_2RadolWwkWxzk1P,Trash Cart,True,False,False,False
+R_1g2xGtXkn9deN5R,Trash Cart,True,False,False,False
+R_2EoWt3uBdqOZimJ,Trash Cart,True,False,False,False
+R_1FS6PynCDXPC9cK,Trash Cart,True,False,False,False
+R_3mlNCY103xrod13,Trash Cart,True,False,False,False
+R_2VmccSEFjhd3HdO,Trash Cart,True,False,False,False
+R_1QlIYkuOeDmZBz0,Trash Cart,True,False,False,False
+R_DOjuEcxc0Ac9XmV,Trash Cart,True,False,False,False
+R_TiPzLjzfIRiiMOB,Trash Cart,True,False,False,False
+R_2rPBf7hZ2fluqTC,Trash Cart,True,False,False,False
+R_2fpNpQlj6haARqq,Trash Cart,True,False,False,False
+R_2tledQ3XLda1vEC,Trash Cart,True,False,False,False
+R_DOxmHFBL1K0uJYB,Trash Cart,True,False,False,False
+R_9vsXwRK28UxJrGN,Trash Cart,True,False,False,False
+R_3KAwxBZIyCXBKUY,NA,False,False,False,False
+R_2COioatClxTHs17,Trash Cart,True,False,False,False
+R_C1BgpyLAWVNjNEB,Trash Cart,True,False,False,False
+R_3KJhRXggdz4ZlkC,Trash Cart,True,False,False,False
+R_3gZ6y9x1MvVfWoy,Trash Cart,True,False,False,False
+R_2WGqr6r00R9cRFn,Trash Cart,True,False,False,False
+R_3fjTI6foFlWsi8a,Trash Cart,True,False,False,False
+R_ulGKVQji1JSWlot,Trash Cart,True,False,False,False
+R_1GUM8X3lC3QsDdH,Trash Cart,True,False,False,False
+R_3QDapxcilDJAb0Z,Trash Cart,True,False,False,False
+R_2qsn1iZZtIYa3fb,Trash Cart,True,False,False,False
+R_22wQpmE7t8aNRZw,Trash Cart,True,False,False,False
+R_3EEC995yU4ZjGjR,Trash Cart,True,False,False,False
+R_21EQnB8dSzsKVfk,Trash Cart,True,False,False,False
+R_1H1Vw5z4scuxeDR,Trash Cart,True,False,False,False
+R_1PY1cGY3K4Pp589,Trash Cart,True,False,False,False
+R_1H1amT7gltHB81c,Trash Cart,True,False,False,False
+R_1CxbLod3wAaFYBP,Trash Cart,True,False,False,False
+R_UXFfvIQeOFQKZ5n,Trash Cart,True,False,False,False
+R_2pQYyMG4dzX0OE6,Trash Cart,True,False,False,False
+R_2VDSkW88jjDy4yq,Trash Cart,True,False,False,False
+R_3ITaqOxDj5RItE7,Trash Cart,True,False,False,False
+R_1hFr1gxvqvJVX56,Trash Cart,True,False,False,False
+R_1dfZpRDrv2rY7jR,Trash Cart,True,False,False,False
+R_33e5mQ65Tg1UdCK,Trash Cart,True,False,False,False
+R_74ck1s16gme4s49,Trash Cart,True,False,False,False
+R_1fkmHqSIqoB97ou,Trash Cart,True,False,False,False
+R_2axHFpThijbRi4d,Trash Cart,True,False,False,False
+R_3NCE5vaAX0073xW,Trash Cart,True,False,False,False
+R_3DvSxJbuBMglw7z,NA,False,False,False,False
+R_5opRzgT1yJnEJ0J,Recycling Cart,False,True,False,False
+R_1kUIT1SILd60pyU,Trash Cart,True,False,False,False
+R_9ZuknWLhbVqOybf,Trash Cart,True,False,False,False
+R_1FLjhf2sFI44Cf4,Trash Cart,True,False,False,False
+R_vMLDrYTdfCabRjX,Trash Cart,True,False,False,False
+R_25swR7JzvEq9fSC,Trash Cart,True,False,False,False
+R_3qg5G8KDEhDNLsx,Trash Cart,True,False,False,False
+R_2uD0ALI9QOcgGvy,Trash Cart,True,False,False,False
+R_1FETsu2RRPPeIJT,Trash Cart,True,False,False,False
+R_3ixPUKbQWLsfetW,Other (such as can and bottle return or compost),False,False,False,True
+R_1mUcb0Hh0r5qucC,Trash Cart,True,False,False,False
+R_2PAmevHIHLgziO3,"Trash Cart,Take to Drop-off Recycling Center",True,False,True,False
+R_2Sddp0F6fYGZyHA,Trash Cart,True,False,False,False
+R_3knpGQ9G5ryIutp,Trash Cart,True,False,False,False
+R_7NVNNKqoitRQUgx,Trash Cart,True,False,False,False
+R_2w1tsFF4dkvUfKp,Trash Cart,True,False,False,False
+R_3RjBa6MGSs4do0w,Trash Cart,True,False,False,False
+R_2rSBq7AyNy1tQyA,Trash Cart,True,False,False,False
+R_1mlbPGlXYxOItvW,Trash Cart,True,False,False,False
+R_1FfHXjJCrVBsKDT,Trash Cart,True,False,False,False
+R_qLAjxtPeyqzAjwl,Trash Cart,True,False,False,False
+R_1rdfLkwq0zmQpq6,Trash Cart,True,False,False,False
+R_1F3a8tnE5Q8pGdi,Trash Cart,True,False,False,False
+R_3isEgheOJ7P7Me5,Trash Cart,True,False,False,False
+R_3sySnbgLzldFscH,Trash Cart,True,False,False,False
+R_3RxAAtDL9Lx4kR7,Trash Cart,True,False,False,False
+R_3nBlRCMp3NNYxHy,Trash Cart,True,False,False,False
+R_0wFPwZJvI678KjL,"Trash Cart,Take to Drop-off Recycling Center",True,False,True,False
+R_1cXO9BN8DVjD1id,Trash Cart,True,False,False,False
+R_O0Vqzd2lhofUuBj,Trash Cart,True,False,False,False
+R_1gumG0DM4oGOLwT,Trash Cart,True,False,False,False
+R_1rHV1Z1POlYzoTy,Recycling Cart,False,True,False,False
+R_29v1kl7ODZPkbU5,Trash Cart,True,False,False,False
+R_PHAnDywGWw3nEIN,Take to Drop-off Recycling Center,False,False,True,False
+R_By6LtI4TklIHVy9,Trash Cart,True,False,False,False
+R_2UhA1v3qaFrnJZP,Trash Cart,True,False,False,False
+R_3En9mcTwfuvDfOm,"Trash Cart,Take to Drop-off Recycling Center",True,False,True,False
+R_1mPlcrAhN4I8K7K,"Trash Cart,Take to Drop-off Recycling Center",True,False,True,False
+R_3321VFsdTPHrNf0,Trash Cart,True,False,False,False
+R_2s55Fi8dnA002Pt,Trash Cart,True,False,False,False
+R_5uUhGcsrjiE6x2x,Trash Cart,True,False,False,False
+R_C2KeQW0YotEvUDT,Trash Cart,True,False,False,False
+R_6s6jBcPw0NjkFi1,Trash Cart,True,False,False,False
+R_XGTNl5JQHsWQyQh,Trash Cart,True,False,False,False
+R_1FJwpfVTJekOqjh,Trash Cart,True,False,False,False
+R_3RwsYtSP9tdkYv1,Trash Cart,True,False,False,False
+R_2VlkppxWDNp9fPk,Trash Cart,True,False,False,False
+R_8IeUzTJ78Vvwtb3,Trash Cart,True,False,False,False
+R_2qyGcToGDh4RaZ9,"Trash Cart,Other (such as can and bottle return or compost)",True,False,False,True
+R_2zvycCkumzeZ52I,Trash Cart,True,False,False,False
+R_UGAP20SuXpQA5nb,Trash Cart,True,False,False,False
+R_2qf2sxWPQ6hpy76,Trash Cart,True,False,False,False
+R_2uszpmMWAkulrn5,Trash Cart,True,False,False,False
+R_3KwQ7E4zbFsuJp9,Recycling Cart,False,True,False,False
+R_11cfBkheKPcFiIz,Trash Cart,True,False,False,False
+R_2triF08YCXtQQiC,Trash Cart,True,False,False,False
+R_25YKUvS6s0IrEQn,Trash Cart,True,False,False,False
+R_3mfS4qfldItR359,Trash Cart,True,False,False,False
+R_1rk2aM9ptDxh0uw,Trash Cart,True,False,False,False
+R_2e2QOTM0MXgBdim,Trash Cart,True,False,False,False
+R_2SoVznHLXFp6AII,Trash Cart,True,False,False,False
+R_3nxx80KCxVLQAE3,Trash Cart,True,False,False,False
+R_3nCACOSRY2r0RhQ,Trash Cart,True,False,False,False
+R_3lQa3BonRlpagPA,Trash Cart,True,False,False,False
+R_115CzHpYpS1WSop,Trash Cart,True,False,False,False
+R_Ua8v5yZy7uRanBv,"Trash Cart,Other (such as can and bottle return or compost)",True,False,False,True
+R_A1BsIL7IKYuo4Cd,Trash Cart,True,False,False,False
+R_1dtzY5QvyeFFXMY,Trash Cart,True,False,False,False
+R_1j9DiGmtVH60GjR,Trash Cart,True,False,False,False
+R_2zphRy3Bq8VAjZo,Trash Cart,True,False,False,False
+R_3IYw0HmXPuJiLqJ,Trash Cart,True,False,False,False
+R_e3cV1JzQCM0ZhaF,Trash Cart,True,False,False,False
+R_W8c6wtKmuOsIpuF,Trash Cart,True,False,False,False
+R_32LaDJwXmogR9Re,Trash Cart,True,False,False,False
+R_3FKbdxo1M9srOu4,Trash Cart,True,False,False,False
+R_3D17l1H8UgTXOco,Trash Cart,True,False,False,False
+R_41QK8DTODGOY6DD,Trash Cart,True,False,False,False
+R_1mkpJkQuzB0IDur,Trash Cart,True,False,False,False
+R_u4XoVhnSfFl6biF,Trash Cart,True,False,False,False
+R_1IW1a19d7zMwG0z,Trash Cart,True,False,False,False
+R_2sZLkTb0C7mqclI,Trash Cart,True,False,False,False
+R_3QW1JgjCDwCmzuF,Trash Cart,True,False,False,False
+R_O7kuVKE4IHAWX61,Trash Cart,True,False,False,False
+R_3O9vFu3RD2D2mcQ,Trash Cart,True,False,False,False
+R_rkY7MxBeIzHcSnn,Trash Cart,True,False,False,False
+R_3MoPNoqjVeAbTkf,Trash Cart,True,False,False,False
+R_3iJQVFBVGoePjsK,Trash Cart,True,False,False,False
+R_23e2JVEuiqcVDVx,Trash Cart,True,False,False,False
+R_ebrOmhM9aYaOAud,Trash Cart,True,False,False,False
+R_WBcVryfMAsGHlKN,Trash Cart,True,False,False,False
+R_1KdNqEGF7C1sC5A,Trash Cart,True,False,False,False
+R_2q7SYWocftnQoLO,Trash Cart,True,False,False,False
+R_2fvWk64JXy6toFT,Trash Cart,True,False,False,False
+R_1iao6aZVvwVRUZe,Take to Drop-off Recycling Center,False,False,True,False
+R_yvSGUKZX3h6IhRT,Other (such as can and bottle return or compost),False,False,False,True
+R_3O8DZ6S5CTIFui5,Trash Cart,True,False,False,False
+R_2pLVAWKB9qAAVl0,Trash Cart,True,False,False,False
+R_zZjd6MDImpQpkhH,Trash Cart,True,False,False,False
+R_2zcF8zz3ZYq69tz,Trash Cart,True,False,False,False
+R_9Rd0JuuycBkDQOt,Trash Cart,True,False,False,False
+R_3GlYxrDjOzm1M4j,Trash Cart,True,False,False,False
+R_vDG1tVlinMDJCkV,Trash Cart,True,False,False,False
+R_32Qs9cMzDLZAl2t,Trash Cart,True,False,False,False
+R_1CJgsbXIRk3Dyrz,Trash Cart,True,False,False,False
+R_241chZlLK78NijR,Trash Cart,True,False,False,False
+R_syVnTb8o2REA4h3,Trash Cart,True,False,False,False
+R_2DYt3LblJG4lqV2,Trash Cart,True,False,False,False
+R_beghlvqjMEKgbyF,Trash Cart,True,False,False,False
+R_20Z47DpqH3l6p9J,Trash Cart,True,False,False,False
+R_305WoZEcIS1taJZ,NA,False,False,False,False
+R_2uWLK7FFPO2oztI,Trash Cart,True,False,False,False
+R_3dKd1cUJjNk9Pkg,Trash Cart,True,False,False,False
+R_3GexPYPKQpKU8B0,Trash Cart,True,False,False,False
+R_21H8xMqquKAJNSy,Trash Cart,True,False,False,False
+R_3PAD3WW6ITltXpF,Trash Cart,True,False,False,False
+R_ah4EcyNtWq66M37,Trash Cart,True,False,False,False
+R_3Dpw0L93UJIdmK7,Trash Cart,True,False,False,False
+R_1In4KxUw0Pz7PsA,Take to Drop-off Recycling Center,False,False,True,False
+R_1eDiK2UAe4cmiJq,Trash Cart,True,False,False,False
+R_3D14QqYiBvt3TpJ,Trash Cart,True,False,False,False
+R_26liY8uMWCnVX5o,Trash Cart,True,False,False,False
+R_24XgynI8QAzzqa5,Trash Cart,True,False,False,False
+R_2Ysu9W0vTMaHkXd,Trash Cart,True,False,False,False
+R_3M6xu1HlGTazaU9,Trash Cart,True,False,False,False
+R_2eQohTuKX3RGs3N,Trash Cart,True,False,False,False
+R_VImxwgvSIol6MmZ,Trash Cart,True,False,False,False
+R_tKz0JJQUD5cKVl7,Trash Cart,True,False,False,False
+R_1EX1zItlbW69btm,Trash Cart,True,False,False,False
+R_1OBo20X7Pdlzlg2,Trash Cart,True,False,False,False
+R_2Cwd9iwMC8fg36y,Trash Cart,True,False,False,False
+R_125X3q2z2JhdTVq,Trash Cart,True,False,False,False
+R_2TKSorrbMmrFTXH,Trash Cart,True,False,False,False
+R_28XNQHiIxj2PW34,Trash Cart,True,False,False,False
+R_1gSYe7XVgt2kDJr,Trash Cart,True,False,False,False
+R_3mkN4eQnhkCslLR,Trash Cart,True,False,False,False
+R_2xxHJJ9AwDo1Bm1,Trash Cart,True,False,False,False
+R_27lFBqdJmR5LB5A,Trash Cart,True,False,False,False
+R_9NddfSgkZ3pq8Ux,Trash Cart,True,False,False,False
+R_2OMF7fc7bhIodbN,Trash Cart,True,False,False,False
+R_su3qWsCKCZxc0bT,Trash Cart,True,False,False,False
+R_3NOsVEMugLqtAbS,Trash Cart,True,False,False,False
+R_3gUCE4YyhpF1aAP,Trash Cart,True,False,False,False
+R_curlDvGITFMGVtT,Trash Cart,True,False,False,False
+R_BsTjeGGWI3N2qXv,Trash Cart,True,False,False,False
+R_3J9hPQY5ctlQzbT,Trash Cart,True,False,False,False
+R_3rUTiormaSjiFMv,Trash Cart,True,False,False,False
+R_qCMghZP7hvCgXw5,Trash Cart,True,False,False,False
+R_2rDiDMwImMf867I,Trash Cart,True,False,False,False
+R_2arhxjkK8zDykjj,Trash Cart,True,False,False,False
+R_2cnI4kyXYeHumuQ,Trash Cart,True,False,False,False
+R_2ipFBXCAbJr6j6h,Trash Cart,True,False,False,False
+R_1Cg1yYgxH72In85,Trash Cart,True,False,False,False
+R_238DceOUScTxWxr,Trash Cart,True,False,False,False
+R_SMD70HS3re3JXWN,Trash Cart,True,False,False,False
+R_2z7IteDW5O55vUZ,Trash Cart,True,False,False,False
+R_AiHvKEfQU0UdIf7,Trash Cart,True,False,False,False
+R_3CH3O30a962aoyh,Trash Cart,True,False,False,False
+R_1isacs1uPjnBq6e,Trash Cart,True,False,False,False
+R_1rH68YgAhstYvPk,Trash Cart,True,False,False,False
+R_p4N0BcQsffCRJ8R,Trash Cart,True,False,False,False
+R_2rA57M2VlfuRR3l,Trash Cart,True,False,False,False
+R_2b1oF8BOfzRcYSB,Other (such as can and bottle return or compost),False,False,False,True
+R_1irmPf9ZJxatNSw,Trash Cart,True,False,False,False
+R_xhCdrOV2cUkcWnn,Trash Cart,True,False,False,False
+R_1Cp6BY9f4xRVwSu,Trash Cart,True,False,False,False
+R_3fis8Z0Vfnd0rRM,Trash Cart,True,False,False,False
+R_32WpgQ1QA5Ljk2L,Trash Cart,True,False,False,False
+R_2qslbLaLTpP54M4,Take to Drop-off Recycling Center,False,False,True,False
+R_3jezfRQ094qsMtP,Trash Cart,True,False,False,False
+R_AgL5Sk8obLyKXwR,Trash Cart,True,False,False,False
+R_3lKeWUujAcQNNUY,Trash Cart,True,False,False,False
+R_3EAxgqqCRQBjNXB,Trash Cart,True,False,False,False
+R_1opafvCscbjdmSp,Trash Cart,True,False,False,False
+R_2xJzsLxgzvSqKo5,Trash Cart,True,False,False,False
+R_3MLnb5mDiwhwwFk,Trash Cart,True,False,False,False
+R_3GvSiRej4oj4hIm,Trash Cart,True,False,False,False
+R_XFz7gfdKWRtILL3,Trash Cart,True,False,False,False
+R_25LV3fqkDEPNHxJ,Recycling Cart,False,True,False,False
+R_3EYBI8qZ5L8xI2D,Trash Cart,True,False,False,False
+R_2YFyVTyAmL0gE0A,Trash Cart,True,False,False,False
+R_2OW3G6P6FX5f1L8,Trash Cart,True,False,False,False
+R_3m4WwIGrONAHMPz,Trash Cart,True,False,False,False
+R_PvYD2FzWdbb9kfT,Trash Cart,True,False,False,False
+R_33xm2Ts2voco948,"Trash Cart,Take to Drop-off Recycling Center",True,False,True,False
+R_2VC4inzlj4hK9yk,Trash Cart,True,False,False,False
+R_22ofAI05Nb7pJhQ,Trash Cart,True,False,False,False
+R_9v2HRUkD5b6P7Oh,Trash Cart,True,False,False,False
+R_1jery6gMn5igTgT,Trash Cart,True,False,False,False
+R_0J05cw0anbnEx9L,Trash Cart,True,False,False,False
+R_248hvBxBEHG8IyK,Trash Cart,True,False,False,False
+R_33kZ1yDCBqUsSps,Trash Cart,True,False,False,False
+R_3Li2plAbXbO7J6u,Trash Cart,True,False,False,False
+R_1pSvMleQx8pWUTd,Trash Cart,True,False,False,False
+R_2BhNyFLjcEypaHw,Trash Cart,True,False,False,False
+R_3kv7eB51QY91g0J,Trash Cart,True,False,False,False
+R_2EyhtnVt1iUNtST,Trash Cart,True,False,False,False
+R_1pVtNJ1CPl3f3LH,Trash Cart,True,False,False,False
+R_3nrBmfkVOh7TKlb,Trash Cart,True,False,False,False
+R_2D7em0FlxS3XgLR,Trash Cart,True,False,False,False
+R_28YD2wk4QiTilso,Trash Cart,True,False,False,False
+R_0llLAx6357oOXbb,Trash Cart,True,False,False,False
+R_1eQu5aZqnTai2d8,NA,False,False,False,False
+R_2D6PFil7c2zCnfX,Trash Cart,True,False,False,False
+R_yJ7sVvc9iLkLeX7,Trash Cart,True,False,False,False
+R_1NyU2A8yKpCgP6X,Trash Cart,True,False,False,False
+R_27DzDbtFUFi8ply,Trash Cart,True,False,False,False
+R_pQ61HB544mdfk2d,Trash Cart,True,False,False,False
+R_1Q9gjcfS3RqNG58,Trash Cart,True,False,False,False
+R_QlU3IHeoF3t27bb,Trash Cart,True,False,False,False
+R_6DNR2rnwKRXbosh,Trash Cart,True,False,False,False
+R_3kO2QK1355nrpx4,Trash Cart,True,False,False,False
+R_1LBBMChyqH8jAl5,Trash Cart,True,False,False,False
+R_b2BPStkZRjp50I1,Trash Cart,True,False,False,False
+R_ZLa1fnBV11IBFHH,Trash Cart,True,False,False,False
+R_zSfG4ln5iTQYcw1,Trash Cart,True,False,False,False
+R_2dp4wt3meEgb6Lh,Trash Cart,True,False,False,False
+R_2UW8CUZH7AdVxUp,Trash Cart,True,False,False,False
+R_x3l7QO5YRROcwzn,NA,False,False,False,False
+R_s4OSbLYTiyxzqq5,Trash Cart,True,False,False,False
+R_2411MMgGw3Eq69l,Trash Cart,True,False,False,False
+R_AKUt4FCJpEatiE1,Trash Cart,True,False,False,False
+R_1gAUX9FgOj2pGaL,Trash Cart,True,False,False,False
+R_1Cg8sH0X7dOF31H,Trash Cart,True,False,False,False
+R_aXH1EomfPHUVi2l,Trash Cart,True,False,False,False
+R_afaDQNcRPEoxqOR,Trash Cart,True,False,False,False
+R_3Jfa8nMPvf2WiUz,Trash Cart,True,False,False,False
+R_25L3ZoCGTioHri1,Trash Cart,True,False,False,False
+R_2asKoYSjry622Ou,Trash Cart,True,False,False,False
+R_3kcgHeAUxOU4MaL,Other (such as can and bottle return or compost),False,False,False,True
+R_25LVJiFxFwZVcW1,Trash Cart,True,False,False,False
+R_QoJQfO75mh0K0Bb,Trash Cart,True,False,False,False
+R_1j6rTddQu31fGwf,Trash Cart,True,False,False,False
+R_3HuF3RXs0xFcEgi,Trash Cart,True,False,False,False
+R_1E7mOoAiv3JMQrB,Trash Cart,True,False,False,False
+R_1JQiiGEjuCrmyya,Trash Cart,True,False,False,False
+R_Z1PpITBwi5M33nb,Trash Cart,True,False,False,False
+R_3s5CHiWOAwJ7ntb,Other (such as can and bottle return or compost),False,False,False,True
+R_2SHbYgJoGPW7rmN,Trash Cart,True,False,False,False
+R_2P75o9iWmBe4IFP,Trash Cart,True,False,False,False
+R_10DIRrwFOD7rljt,Trash Cart,True,False,False,False
+R_Op14qf9MHqgtylX,Trash Cart,True,False,False,False
+R_71EqukmDA788fm1,Trash Cart,True,False,False,False
+R_RkrAKdE1DjhgSBP,Trash Cart,True,False,False,False
+R_1PSoW7NgtfCg600,Other (such as can and bottle return or compost),False,False,False,True
+R_3JERjxv7n52ux8s,Trash Cart,True,False,False,False
+R_3IRyeswPe00Hm1X,Trash Cart,True,False,False,False
+R_3nwn3pYaKQFqAjA,Trash Cart,True,False,False,False
+R_AoqYwbRuBlhQUXT,NA,False,False,False,False
+R_1NfKJaKDnnAKKY1,Trash Cart,True,False,False,False
+R_1MlygV5Ths79Lyh,Trash Cart,True,False,False,False
+R_1fdPI4qdkAMUPPI,Trash Cart,True,False,False,False
+R_2xP3BNFNPaTL92z,Trash Cart,True,False,False,False
+R_Wle0qI3Y2CIqIxj,Trash Cart,True,False,False,False
+R_31nIZxbK1Kzl1kp,Trash Cart,True,False,False,False
+R_1dgL8LABcTTDxu2,Trash Cart,True,False,False,False
+R_oZzezbBQysooMox,Other (such as can and bottle return or compost),False,False,False,True
+R_1Quf4EjEsCnPAbe,Trash Cart,True,False,False,False
+R_qItmsukxOgUfDEt,Trash Cart,True,False,False,False
+R_tDS5GhcVB1ySa9b,Trash Cart,True,False,False,False
+R_1cSOQ8o0mP4tuzf,NA,False,False,False,False
+R_33wh7rzcGW7Rw0P,Trash Cart,True,False,False,False
+R_6ygCmr5Aq47ePHX,Trash Cart,True,False,False,False
+R_1gngWVLSyxnI4We,Trash Cart,True,False,False,False
+R_3QDBoumpZ1zbRTt,Trash Cart,True,False,False,False
+R_1QhYk36Nni16x9W,Trash Cart,True,False,False,False
+R_272Vu3yKZas06hV,Trash Cart,True,False,False,False
+R_3lAKaD3pfNUPcdr,Trash Cart,True,False,False,False
+R_31ATZ3iCca6SCJf,Trash Cart,True,False,False,False
+R_20SgdIkT1m2L5yC,Trash Cart,True,False,False,False
+R_BywKRni64zwMAIp,Trash Cart,True,False,False,False
+R_1mXwhSzht4Q9Luw,Trash Cart,True,False,False,False
+R_2ctRQHKnOky1zwW,Take to Drop-off Recycling Center,False,False,True,False
+R_3rTjclHZrvGqJiw,Trash Cart,True,False,False,False
+R_2EtuhD3sL7ZMopd,Trash Cart,True,False,False,False
+R_3O160iKRafC0phA,Trash Cart,True,False,False,False
+R_T6lbRY3FBNwGGqJ,Trash Cart,True,False,False,False
+R_2VvxLj6rY4u0X3Z,"Trash Cart,Recycling Cart",True,True,False,False
+R_w7V3lmRJ1g76A7L,Trash Cart,True,False,False,False
+R_3O1vo0TSVvTf06F,Trash Cart,True,False,False,False
+R_eFGZ7HinHAcx3J7,Trash Cart,True,False,False,False
+R_1N3NzNZRYEtxmei,Trash Cart,True,False,False,False
+R_8e1AbnoBy1K9AL7,Trash Cart,True,False,False,False
+R_3iFuogFuyw3qi5j,NA,False,False,False,False
+R_1DMDzMnBg0H2ej3,Trash Cart,True,False,False,False
+R_3jVgFAVd5wVvFdC,Trash Cart,True,False,False,False
+R_pAbja210EwcSuZz,Other (such as can and bottle return or compost),False,False,False,True
+R_TbX9npjT6KHAYUx,Trash Cart,True,False,False,False
+R_2bP2YH08feJHGsK,"Trash Cart,Take to Drop-off Recycling Center",True,False,True,False
+R_21vTsDRphwCeJlo,Trash Cart,True,False,False,False
+R_0x3H9Wp4bfcOhl7,Trash Cart,True,False,False,False
+R_1FCVn18TaZRKeKM,Trash Cart,True,False,False,False
+R_2ur3OYF84qkTKAR,Trash Cart,True,False,False,False
+R_eg77MJYje16owmt,Trash Cart,True,False,False,False
+R_vVOOHl5w74hCCA1,Trash Cart,True,False,False,False
+R_1JEp3GUrukQJPeq,Trash Cart,True,False,False,False
+R_3IbfpoQCG4S2h7q,"Trash Cart,Recycling Cart",True,True,False,False
+R_1pJOD7oR8FVIGHh,Trash Cart,True,False,False,False
+R_3nIcWnv3GxJDk1V,Trash Cart,True,False,False,False
+R_3lJt1qZDrcPmgiW,Trash Cart,True,False,False,False
+R_0Mz69uR9k9vtMhH,Trash Cart,True,False,False,False
+R_3hiITL8ObapeAZ7,Trash Cart,True,False,False,False
+R_3Mz1Cxck9NoCx69,Trash Cart,True,False,False,False
+R_3nVKsAeifhrIugV,Trash Cart,True,False,False,False
+R_5bYXsj56pU7f6cV,Trash Cart,True,False,False,False
+R_1Q3jy1tpQx1TKUe,Trash Cart,True,False,False,False
+R_1ohbkP5PtYiuPmr,Trash Cart,True,False,False,False
+R_3PYqb18pSKy7lhp,Trash Cart,True,False,False,False
+R_1dtxnQ5xSjBsyQE,Trash Cart,True,False,False,False
+R_290UNrNX5Oi3Lhn,Trash Cart,True,False,False,False
+R_2trr358i8FgTE7w,"Trash Cart,Other (such as can and bottle return or compost)",True,False,False,True
+R_1K6ATaM7vI4BcRD,Trash Cart,True,False,False,False
+R_1lhgGvTNWBGshoI,Trash Cart,True,False,False,False
+R_1jlcq7aJbp5r1lh,NA,False,False,False,False
+R_1HpEn98o6udx7Ub,Trash Cart,True,False,False,False
+R_2q2xkp8MGGJWxOB,Trash Cart,True,False,False,False
+R_2t9eluYQzyPkLZN,Trash Cart,True,False,False,False
+R_3lWXInooCt5AxMk,Trash Cart,True,False,False,False
+R_2D5DnYAGYLuaRHn,NA,False,False,False,False
+R_et80dan6Ef8kFEt,Trash Cart,True,False,False,False
+R_2VmePXR4Q5QsWOF,Trash Cart,True,False,False,False
+R_3NINTRRxUUm0iMk,Trash Cart,True,False,False,False
+R_Rt86S0YxH1NkS8p,Trash Cart,True,False,False,False
+R_yIn9qXmbRP9mmfT,Trash Cart,True,False,False,False
+R_6sCdOxXdi41nIVr,Trash Cart,True,False,False,False
+R_3drRvB9qjbxxHXj,Trash Cart,True,False,False,False
+R_3stZoCEhtHdYEv7,Trash Cart,True,False,False,False
+R_CjdYvp0hSrfyrHr,Trash Cart,True,False,False,False
+R_Df4j2oKjbx2X8sx,Trash Cart,True,False,False,False
+R_3PplAruzLhnrpq9,Trash Cart,True,False,False,False
+R_2QS90n0J3CkpXwU,Trash Cart,True,False,False,False
+R_A7e9aYuaP55WUsF,Trash Cart,True,False,False,False
+R_Q660StJyZoh1L5T,Trash Cart,True,False,False,False
+R_3yBqQpmbVGshha9,Trash Cart,True,False,False,False
+R_C84dQq259jLpO8N,Trash Cart,True,False,False,False
+R_3Eu0VjnnWUqrmfq,Take to Drop-off Recycling Center,False,False,True,False
+R_cZ7x3su4cZtoGqd,Trash Cart,True,False,False,False
+R_3Ea8yi3UX1CHZgm,Trash Cart,True,False,False,False
+R_DOAXv6EFqEA8lcR,Trash Cart,True,False,False,False
+R_BuhiyXPqmlzoLe1,Trash Cart,True,False,False,False
+R_2DT5y1bdb749YTF,Trash Cart,True,False,False,False
+R_3DpyyQ5oN0DGLPR,Trash Cart,True,False,False,False
+R_1oHJcf4ecInDPxg,Trash Cart,True,False,False,False
+R_1NhubF3cXhwvowZ,Trash Cart,True,False,False,False
+R_Ado3IVhorJjHdCh,Trash Cart,True,False,False,False
+R_1LRsd74Lmf0vUAk,Trash Cart,True,False,False,False
+R_3PpYOisHeizVCF5,Trash Cart,True,False,False,False
+R_2OHeOTGM58dFZNO,Trash Cart,True,False,False,False
+R_1HiPZ5ABrguLMnZ,Trash Cart,True,False,False,False
+R_1gC7uJJ7xmIAKZp,Trash Cart,True,False,False,False
+R_0vP8B5eAqk9Wfmx,Trash Cart,True,False,False,False
+R_3RybQo6fuO5hFJJ,Trash Cart,True,False,False,False
+R_2TtVDbRXPz15H2u,Trash Cart,True,False,False,False
+R_1PTAnQAImfOHR2A,Trash Cart,True,False,False,False
+R_2EzBMB21o1fJqKK,Trash Cart,True,False,False,False
+R_7Wja7XaJnubJ1jb,Trash Cart,True,False,False,False
+R_2CcUh3pSwZfWQhs,Trash Cart,True,False,False,False
+R_389WQR8wb26jBzr,Trash Cart,True,False,False,False
+R_2tcnk5lVJHCsiCB,Trash Cart,True,False,False,False
+R_3EiGE3R4dsrKKWg,Trash Cart,True,False,False,False
+R_3g6CifOucuXDDgI,Trash Cart,True,False,False,False
+R_RRDSzLTJjizG3zb,Trash Cart,True,False,False,False
+R_1ezBoKw5WPrGlcJ,"Trash Cart,Other (such as can and bottle return or compost)",True,False,False,True
+R_1QGuzmYZhpAqOaJ,Trash Cart,True,False,False,False
+R_3CUi5Jdp5sielRl,Trash Cart,True,False,False,False
+R_1j8GsAN0Sm6zUxn,Trash Cart,True,False,False,False
+R_qw6yTLyhXNubePT,Trash Cart,True,False,False,False
+R_2CTwz6Cl7QuU2kA,Trash Cart,True,False,False,False
+R_1dKZiiotqUH0E3k,Trash Cart,True,False,False,False
+R_210QE9rrdqn40e3,Trash Cart,True,False,False,False
+R_zShtOsakLIltNx7,Trash Cart,True,False,False,False
+R_2sSArqRYPEGqYLI,Trash Cart,True,False,False,False
+R_6XyVEfOMu0vaSuR,Trash Cart,True,False,False,False
+R_3emAWvo36f0jY75,"Trash Cart,Other (such as can and bottle return or compost)",True,False,False,True
+R_qxbdsuk1BjrNhzH,Trash Cart,True,False,False,False
+R_3pyuuVlPMUEqTmh,Trash Cart,True,False,False,False
+R_124RzCXmJM8Hh6E,Trash Cart,True,False,False,False
+R_wMnZDJluSVlymad,Trash Cart,True,False,False,False
+R_2zdx09Xfv1XB9JG,Recycling Cart,False,True,False,False
+R_2fJKvE9XiVUPXC5,Trash Cart,True,False,False,False
+R_3MhcDFDdwvIgCht,Recycling Cart,False,True,False,False
+R_2Bmk5yZSdQjifuB,Trash Cart,True,False,False,False
+R_24emLcapgeSCov2,Trash Cart,True,False,False,False
+R_2V8zGRBxp4udmtg,Trash Cart,True,False,False,False
+R_3F3z0MqkIwO0nwR,Trash Cart,True,False,False,False
+R_2S7grkq9ZpbDHpi,Trash Cart,True,False,False,False
+R_3R4oIUHMpsMA7cM,Trash Cart,True,False,False,False
+R_838V4xD0j17LPW1,Trash Cart,True,False,False,False
+R_1K2dzXwE3Z8vAyC,Trash Cart,True,False,False,False
+R_2zd6lj5dzFvyZRH,Trash Cart,True,False,False,False
+R_28ZKNY0yTfBHF4d,Trash Cart,True,False,False,False
+R_ai0nXEtWuS9gdTr,Trash Cart,True,False,False,False
+R_1Ed0sA8iht7WVKF,Trash Cart,True,False,False,False
+R_2cmYFmnKjkUfNL3,"Recycling Cart,Take to Drop-off Recycling Center",False,True,True,False
+R_3EtGBFCePWNTPIR,Trash Cart,True,False,False,False
+R_3MxiXkh9h4MtXJu,Trash Cart,True,False,False,False
+R_1rdAzDCaoqhcZms,Trash Cart,True,False,False,False
+R_806OSf5x4LP0Mg1,Trash Cart,True,False,False,False
+R_cBcGjy1hlmPgJNL,Trash Cart,True,False,False,False
+R_1Kr3jHJCP0Lsh9T,Trash Cart,True,False,False,False
+R_C8EkImjY7hNwEpj,Trash Cart,True,False,False,False
+R_21j2a2qnwcsEDd6,Trash Cart,True,False,False,False
+R_b3joVTISNL7sPbb,Trash Cart,True,False,False,False
+R_sq8sDAnUJeJb5Xr,Trash Cart,True,False,False,False
+R_0OsaCJIIUfUmmFX,Trash Cart,True,False,False,False
+R_1hGOD5l0iXsekY0,Trash Cart,True,False,False,False
+R_ef9S9K1FpNIKbOV,Trash Cart,True,False,False,False
+R_3RmwF1aAhkNJBxs,Trash Cart,True,False,False,False
+R_1QlRmun1GC5Y33A,Trash Cart,True,False,False,False
+R_2X54ciMYUheU6vO,Trash Cart,True,False,False,False
+R_2q4pDz3mT7iYZbu,Trash Cart,True,False,False,False
+R_6DKWjNhFycV20qB,Trash Cart,True,False,False,False
+R_3iIKotxLfrAGmyt,NA,False,False,False,False
+R_6GzkLRJgPrtpd7z,Trash Cart,True,False,False,False
+R_yNFET7HqVThco49,Trash Cart,True,False,False,False
+R_sbvbx5snp9giUHn,Trash Cart,True,False,False,False
+R_1LU5HafDaXl52XS,Trash Cart,True,False,False,False
+R_Rlu6s6l1IOB8WtP,NA,False,False,False,False
+R_1BRXCyw8EEJqyPQ,NA,False,False,False,False
+R_31BMmjdomNBxcOX,Trash Cart,True,False,False,False
+R_1E4erKJglRMe8NG,NA,False,False,False,False
+R_3FWDPipzgermE3K,NA,False,False,False,False
+R_wLhCBA3Qt23h5Ml,NA,False,False,False,False
+R_DqvY6ovfAZAm43T,NA,False,False,False,False
+R_wTzi2I0tjth8onf,NA,False,False,False,False
+R_3fJehrH7esTeniw,Trash Cart,True,False,False,False
+R_RzgnpPZ3McSb8SR,NA,False,False,False,False
+R_1I4ckt4C85us6cG,Trash Cart,True,False,False,False
+R_8f6mIbZzplHBx17,Take to Drop-off Recycling Center,False,False,True,False
+R_AoEpZ97rb7sA1yN,Trash Cart,True,False,False,False
+R_W0Y8VZK3fKh4Mdr,NA,False,False,False,False
+R_Z8A2CnTQ9tZpKcF,NA,False,False,False,False
+R_USWTMdoHPtDMfUl,NA,False,False,False,False
+R_3n7QurvmC56XeNs,"Trash Cart,Recycling Cart",True,True,False,False
+R_3PYKj1PXnETWzFU,Trash Cart,True,False,False,False
+R_3CCz2gtvDTS4M2x,NA,False,False,False,False
+R_3EbQTBFMmqNGvgd,Trash Cart,True,False,False,False
+R_11Z5dt9kDZclxjj,Trash Cart,True,False,False,False
+R_1eFCtGsuSozkzge,NA,False,False,False,False
+R_2uwkkwsXfACsDyD,Trash Cart,True,False,False,False
+R_2AKy89OKqYXoKG0,NA,False,False,False,False
+R_qLbIagSmlwnXrd7,Trash Cart,True,False,False,False
+R_1pJMbs4md2zLRSI,Trash Cart,True,False,False,False
+R_1ePD7SXAPku8XPG,NA,False,False,False,False
+R_2rvkUsj0T0hgDEv,Trash Cart,True,False,False,False
+R_73ZMkwKfisJrK13,Trash Cart,True,False,False,False
+R_1LMcy8Gqeh1K8nG,Trash Cart,True,False,False,False
+R_cMj9qjWjSBgNphn,Trash Cart,True,False,False,False
+R_qw0juk4RzZptHDb,Trash Cart,True,False,False,False
+R_1EXnqOfDqYaeIa8,Take to Drop-off Recycling Center,False,False,True,False
+R_20Y8xuoOR0H50Be,Trash Cart,True,False,False,False
+R_2c0H8WWwUTc7DK9,Trash Cart,True,False,False,False
+R_10u6jtz7PG8acWS,NA,False,False,False,False
+R_1DIkaYsjt0B06r9,NA,False,False,False,False
+R_wM0fJq8E8T9FTpv,Trash Cart,True,False,False,False
+R_29ncRIk8PR9hcag,Trash Cart,True,False,False,False
+R_27m6go1Kpx3KiJo,Trash Cart,True,False,False,False
+R_2Uhp9eIUMdmotk4,NA,False,False,False,False
+R_1HjA515m8pkbwAC,NA,False,False,False,False
+R_3nf8HJLLUFiwx6q,NA,False,False,False,False
+R_umNZG9Z2pSF2WPL,Trash Cart,True,False,False,False
+R_3QM0u6RqLM3tOHC,NA,False,False,False,False
+R_1ocDiDnkhmV0Pye,Trash Cart,True,False,False,False
+R_bNKysuPOz2djVV7,Take to Drop-off Recycling Center,False,False,True,False
+R_bO3EPHNadLgDZ5v,Trash Cart,True,False,False,False
+R_2aRYZNtppuXTodk,Trash Cart,True,False,False,False
+R_9HTWV6pGy4SCIzn,Recycling Cart,False,True,False,False
+R_2rD5J3AoO0FBtNL,NA,False,False,False,False
+R_1Fybcd6JK1iqxla,Trash Cart,True,False,False,False
+R_2wiuNjpc8iLjcXW,Trash Cart,True,False,False,False
+R_3nMgAs26FmrlIHx,NA,False,False,False,False
+R_0Bt8UJOZG1Pcz4Z,NA,False,False,False,False
+R_2OJaJNbhHmfg5lB,NA,False,False,False,False
+R_3GAMcFPPrEJYm1m,NA,False,False,False,False
+R_1FPsV0eNewP0h8t,Trash Cart,True,False,False,False
+R_2SubvuQ2xBjMgjC,NA,False,False,False,False
+R_2BmtwT75sYbkaen,Trash Cart,True,False,False,False
+R_2w6a38YsVxyze2x,NA,False,False,False,False
+R_tJVj4r8uQ0PXTC9,Trash Cart,True,False,False,False
+R_786xKhNmVap59Rf,NA,False,False,False,False
+R_3HqqW5TIT8IJaIl,Trash Cart,True,False,False,False
+R_12xlUVoPBcNNul2,Trash Cart,True,False,False,False
+R_2v6W1rdgnbh5XgH,NA,False,False,False,False
+R_1jGQnwtcxtifBTX,NA,False,False,False,False
