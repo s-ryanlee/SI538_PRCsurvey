@@ -13,4 +13,4 @@ master csv file exported from Qualtrics survey software after survey closed
 csv file with responses filtered on release date (10/19/20 to 10/29/20)
 
 **"recorded_responses_wlists"**
-csv file with responses filtered on release date and multi-response questions as lists insteaad of a single string of characters
+csv file with responses filtered on release date and multi-response questions as lists instead of a single string of characters
