@@ -1,0 +1,426 @@
+---
+title: "SI538_prc_analysis_Rnotebook"
+author: "Samantha Ryan-Lee"
+date: "12/11/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Residential Feedback Survey Analysis
+
+```{r}
+library(knitr)
+library(tidyverse)
+library(ggplot2)
+library(dplyr)
+library(readxl)
+library(skimr)
+library(moderndive)
+library(infer)
+library(pwr)
+```
+
+```{r}
+prc_survey_wlist <- read.csv("F:/UMSI Fall 2020/courses/SI538/project_materials/recorded_responses_wlists.csv")
+#prc_survey_wlist
+```
+
+```{r}
+tot_resps <- prc_survey_wlist %>% summarize(total = n())
+tot_resps
+```
+
+```{r}
+rc_situations <- read.csv("F:/UMSI Fall 2020/courses/SI538/project_materials/recycling_situations.csv")
+#rc_situations
+```
+
+```{r}
+info_relationships <- read.csv("F:/UMSI Fall 2020/courses/SI538/project_materials/info_relationships_df.csv")
+#info_relationships
+```
+
+# Contamintaion History
+```{r}
+contam_hx <- read.csv("F:/UMSI Fall 2020/courses/SI538/project_materials/lansing_contamination_history - 2017.csv")
+#contam_hx
+estimated_contam_hx <- contam_hx %>% 
+  filter(year == "2019" | year == "2020") %>% 
+  mutate(estimated_contamination_occ = contamination_occ*3)
+complete_contam_hx <- merge(estimated_contam_hx, contam_hx)
+#complete_contam_hx
+```
+
+
+```{r}
+contam_hx2 <- read.csv("F:/UMSI Fall 2020/courses/SI538/project_materials/lansing_contamination_history2 - 2017.csv")
+contam_hx2
+ggplot(contam_hx2, aes(x=Route, y=contamination_occ, fill = factor(year))) +
+  geom_col(position = "dodge") +
+  scale_x_discrete(labels = c("Blue Mon", "Blue Thurs", "Blue Wed", "Blue Tues", "Green Mon", "Green Thurs", "Green Wed", "Green Tues")) + 
+  theme(axis.text.x = element_text(angle=60, hjust=1)) + 
+  labs(title = "Lansing Contamination History", subtitle = "Number of Contamination Occurrences* per Route in 2017, 2019, and 2020")
+
+```
+
+```{r}
+contaminations2017<- contam_hx %>% filter(year == "2017")
+#contaminations2017
+stats2017 <- contaminations2017 %>%
+  summarize(mean=mean(contamination_occ), 
+            std_dev=sd(contamination_occ), 
+            n=sum(contamination_occ))
+mean2017 <- stats2017 %>% pull(mean)
+stats2017
+
+contaminations2019 <- contam_hx %>% filter(year == "2019") %>% 
+  mutate(estimated_contamination_occ = contamination_occ*3)
+#contaminations2019
+stats2019 <-  contaminations2019 %>%
+  summarize(mean=mean(estimated_contamination_occ), 
+            std_dev=sd(estimated_contamination_occ), 
+            n=sum(estimated_contamination_occ))
+mean2019 <- stats2019 %>% pull(mean)
+stats2019
+
+contaminations2020 <- contam_hx %>% filter(year == "2020") %>%
+  mutate(estimated_contamination_occ = contamination_occ*3)
+#contaminations2020
+stats2020 <-  contaminations2020 %>%
+  summarize(mean=mean(estimated_contamination_occ), 
+            std_dev=sd(estimated_contamination_occ), 
+            n=sum(estimated_contamination_occ))
+stats2020
+
+diff_means <- mean2017-mean2019
+
+```
+
+```{r}
+contam_hx_test <- t.test(contaminations2017$contamination_occ, contaminations2019$estimated_contamination_occ, alternative = "two.sided", mu = diff_means, conf.level = 0.95)
+contam_hx_test
+```
+
+
+# Recycling Situations Hypothesis Tests
+
+Descriptive Survey Data
+6% of contaminated recyclables in 2019 audit was due to wishful recycling. 
+
+According to resident feedback survey 8.6% of residents will wishful recycle and 38.36% of residents will properly dispose if they are unsure if an item is not recyclable
+
+National inbound contamination rate is 16.9%
+
+Based on situational recycling questions asked, 16.91% of residents will wishful recycle when they come across an item they are unsure is recyclable. 
+
+Based on situational recycling questions asked, 83.23% of residents will properly dispose when they come across an item they are unsure is recyclable
+
+```{r}
+#t-test
+rc_groups <- rc_situations %>% 
+  select(unsure_item_in_trash, unsure_item_in_recycling) %>%
+  mutate('proper_disp' = unsure_item_in_trash == "Extremely likely" | unsure_item_in_trash == "Somewhat likely", 'wishful_rc' = unsure_item_in_recycling == "Extremely likely" | unsure_item_in_recycling == "Somewhat likely")
+#%>% filter(unsure_item_in_trash == "Extremely likely" | unsure_item_in_trash == "Somewhat likely", unsure_item_in_recycling == "Extremely likely" | unsure_item_in_recycling == "Somewhat likely")
+
+rc_groups$proper_disp <- as.character(rc_groups$proper_disp)
+rc_groups$wishful_rc <- as.character(rc_groups$wishful_rc)
+
+#rc_groups 
+```
+
+```{r}
+rc_counts <- rc_groups %>% 
+  group_by(proper_disp, wishful_rc) %>%
+  summarize(n = n())
+rc_counts
+```
+
+```{r}
+array <- data.matrix(rc_counts)
+(x <- margin.table(array, c(1, 2)) )
+```
+
+pd false and wrc false = neither trashing or recycling an item when unsure about it
+pd false and wrc true = recycling an item when unsure about it 
+pd true and wrc false = trashing an item when unsure about it
+pd true and wrc false = both trashing and recycling an item when unsure about it.
+
+
+
+**Question 1: is the proportion of wishful recyclers different than national inbound contamination rate of 16.9%**
+
+Null Hypothesis: proportion of wishful recyclers = 16.9%
+
+Alternative Hypothesis: proportion of wishful recyclers != 16.9%
+
+
+```{r}
+q1_ttest <- t.test(x = (rc_groups$wishful_rc == "Extremely likeley" | rc_groups$wishful_rc == "Somewhat likeley"), alternative = "two.sided", mu = .169, conf.level = 0.95)
+q1_ttest
+```
+Calculate observed proportion
+
+```{r}
+obs_prop_q1 <- rc_groups %>%
+  specify(response = wishful_rc, success = "TRUE") %>%
+  calculate(stat = "prop") %>%
+  pull(stat)
+obs_prop_q1
+null_prop <- .169
+```
+
+Create Simulation **With Replacement**
+
+```{r}
+null_dist_q1 <- rc_groups %>% 
+  specify(response = wishful_rc, success = "TRUE") %>%
+  generate(reps = 1000, type="bootstrap") %>%
+  calculate(stat="prop")
+#null_dist_q1
+```
+
+Confidence interval
+```{r}
+percentile_ci_q1 <- null_dist_q1 %>% get_confidence_interval(level=00.95, type="percentile")
+percentile_ci_q1
+```
+
+Visualize Simulation
+```{r}
+null_dist_q1 %>% visualize() +
+  shade_confidence_interval(endpoints = percentile_ci_q1) +
+  shade_p_value(obs_stat = null_prop, direction = "both", fill = "pink")
+```
+
+```{r}
+q1_sim_pvalue <- get_p_value(null_dist_q1, obs_stat=null_prop, direction="both")
+q1_sim_pvalue
+```
+
+0.14 > 0.05
+There is not enough evidence to reject the null hypothesis in favor of the alternative hypothesis.
+Even in a random universe, there is not enough evidence that the proportion of wishful recyclers is different from national inbound contamination rate of 16.9%
+
+**Question2: is there a significant difference in the percentage of wishful recyclers and proper disposers?**
+
+Null Hypothesis: proportion of wishful recyclers = proportion of proper disposers
+
+Alternative Hypothesis: proportion of wishful recyclers != proportion of proper disposers
+
+```{r}
+q2_obs_stat <- rc_groups %>%
+  specify(response = proper_disp, explanatory = wishful_rc, success = "TRUE") %>%
+  calculate(stat = "diff in props", order = c("TRUE", "FALSE")) %>%
+  pull(stat)
+q2_obs_stat
+```
+Q2 t-test
+
+```{r}
+q2_ttest <- t.test(x = (rc_groups$wishful_rc == "Extremely likeley" | rc_groups$wishful_rc == "Somewhat likeley"), y = (rc_groups$proper_disp == "Extremely likeley" | rc_groups$proper_disp == "Somewhat likeley"), alternative = "two.sided", mu = q2_obs_stat, conf.level = 0.95)
+q2_ttest
+```
+
+
+Create Simulation **with Replacement** 
+
+variables are independent of each other
+
+```{r}
+q2_diff_prop <- rc_groups %>%
+  specify(proper_disp ~ wishful_rc, success = "TRUE") %>%
+  calculate(stat = "diff in props", order = c("TRUE", "FALSE"))
+q2_diff_prop
+```
+
+```{r}
+null_dist_q2 <- rc_groups %>%
+  specify(formula = proper_disp ~ wishful_rc, success = "TRUE") %>%
+  hypothesize(null = "independence") %>%
+  generate(reps = 1000, type = "bootstrap") %>%
+  calculate(stat = "diff in props", order = c("TRUE", "FALSE"))
+#null_dist_q2
+```
+
+Confidence interval
+```{r}
+percentile_ci_q2 <- null_dist_q2 %>% get_confidence_interval(level=00.95, type="percentile")
+percentile_ci_q2
+```
+
+Visualize Simulation
+```{r}
+null_dist_q2 %>% visualize() +
+  shade_confidence_interval(endpoints = percentile_ci_q1) +
+  shade_p_value(q2_diff_prop, direction = "both")
+```
+
+
+```{r}
+q2_sim_pvalue <- get_p_value(null_dist_q2, obs_stat=q2_diff_prop, direction="both")
+q2_sim_pvalue
+```
+
+0.992 > 0.05
+There is not enough evidence to reject the null hypothesis in favor of the alternative hypothesis.
+In a random universe, there is not enough evidence that the proportion of wishful recyclers is significantly different than residents properly disposing.
+
+
+"To obtain more precise population estimates, one should minimize samplinlg error, which is measured by standard error. The size of standard error is related to the sample size and variation in the population. As a general guide, to halve the standard error, the sample size must be quadrupled."
+
+referenced https://www.theanalysisfactor.com/interpret-width-of-confidence-interval/#:~:text=The%20greater%20the%20confidence%20level,by%20the%20standard%20error%20statistic.
+
+**Sampled without replacement**
+
+variables are dependent on each other
+
+```{r}
+set.seed(538)
+sample <- c(floor(runif(50, 0, 540)))
+sample
+```
+
+```{r}
+q2_sample2 <- rc_groups %>% slice(sample)
+```
+
+```{r}
+q2_sample_shuffled <- q2_sample2 %>%
+  mutate(wishful_rc = sample(wishful_rc))
+#q2_sample_shuffled
+```
+
+```{r}
+#wishful stats shuffled
+n_proper_disp <- q2_sample_shuffled %>%
+  filter(proper_disp == "TRUE", wishful_rc == "FALSE") %>%
+  nrow()
+n_wishful_rc <- q2_sample_shuffled %>%
+  filter(proper_disp == "FALSE", wishful_rc == "TRUE") %>%
+  nrow()
+prop_wishful_rc <- n_wishful_rc / (n_wishful_rc + n_proper_disp)
+prop_wishful_rc
+
+```
+
+```{r}
+#non wishful stats shuffled
+n_notproper_disp <- q2_sample_shuffled %>%
+  filter(proper_disp == "FALSE", wishful_rc == "FALSE") %>%
+  nrow()
+n_notwishful_rc <- q2_sample_shuffled %>%
+  filter(proper_disp == "TRUE", wishful_rc == "FALSE") %>%
+  nrow()
+prop_nonwishful_rc <- n_notwishful_rc / (n_notwishful_rc + n_notproper_disp)
+prop_nonwishful_rc
+```
+
+```{r}
+#diff props shuffled
+diff_prop <- round(prop_wishful_rc - prop_nonwishful_rc, 3)
+diff_prop
+```
+
+```{r}
+#round props post difference 
+prop_wishful_rc <- round(prop_wishful_rc, 3)
+prop_nonwishful_rc <- round(prop_nonwishful_rc, 3)
+
+```
+
+```{r}
+#observed diff in props
+obs_diff_prop <- rc_groups %>%
+  specify(proper_disp ~ wishful_rc, success = "TRUE") %>%
+  calculate(stat = "diff in props", order = c("TRUE", "FALSE"))
+obs_diff_prop
+```
+
+```{r}
+#hypothesize independence of response from explanatory variable (proper disposal is independent of wishful recycling)
+
+null_distribution <- rc_groups %>%
+  specify(formula = proper_disp ~ wishful_rc, success = "TRUE") %>%
+  hypothesize(null = "independence") %>%
+  generate(reps = 1000, type = "permute") %>%
+  calculate(stat = "diff in props", order = c("TRUE", "FALSE"))
+#null_distribution
+```
+
+```{r}
+obs_diff_prop <- rc_groups %>%
+  specify(proper_disp ~ wishful_rc, success = "TRUE") %>%
+  calculate(stat = "diff in props", order = c("TRUE", "FALSE"))
+obs_diff_prop #observed difference
+
+```
+
+```{r}
+percentile_ci_q3 <- null_distribution %>% get_confidence_interval(level=00.95, type="percentile")
+percentile_ci_q3
+```
+
+```{r}
+visualize(null_distribution, bins = 10) +
+  shade_confidence_interval(endpoints = percentile_ci_q3) +
+  shade_p_value(obs_stat = obs_diff_prop, direction = "both", color = "red")
+```
+
+
+```{r}
+p_value <- null_distribution %>%
+  get_p_value(obs_stat = obs_diff_prop, direction = "both") 
+#%>% mutate(p_value = round(p_value, 3))
+p_value
+```
+
+```{r}
+null_distribution_extra <- q2_sample_shuffled %>%
+  specify(formula = proper_disp ~ wishful_rc, success = "TRUE") %>%
+  hypothesize(null = "independence") %>%
+  generate(reps = 5000, type = "permute") %>%
+  calculate(stat = "diff in props", order = c("TRUE", "FALSE"))
+#null_distribution_extra
+```
+
+```{r}
+null_distribution_extra %>% get_p_value(obs_stat = obs_diff_prop, direction = "both")
+```
+```{r}
+visualize(null_distribution_extra, bins = 10) +
+  shade_p_value(obs_stat = obs_diff_prop, direction = "both", color = "red")
+```
+
+# t-Test Interpretation
+
+p_value 0.4492 > 0.05 
+
+we do not have evidence to reject the null hypothesis in favor of the alternative hypothesis.
+
+null hypothesis: there is no difference in the proper disposal between wishful recyclers and non wishful recyclers.
+
+alt hypothesis: there is a difference in the proper disposal between wishful recyclers and non wishful recyclers. 
+
+other alt hypothesis: given an understanding of how the world works, there is not enough evidence that proper disposers are wishful recyclers deferentially less or more often than non wishful recyclers.
+
+# Recycling Situations Type I and II Errors
+
+referenced https://www.statmethods.net/stats/power.html and SI544 Disc nb 11
+
+pvalues (in each hypothesis test) > .05
+
+the probability of getting a type I (reject the null hypothesis when it is in fact true) error is the level of significance (alpha = 0.05)
+
+the probability of getting a type II (fail to reject the null when it is in fact false) error is power (beta = .999)
+
+
+```{r}
+effect_size <- cohen.ES(test = "r", size = "medium")
+effect_size
+power <- pwr.t.test(n = 540, d = 0.3 , type = "two.sample")
+power
+```
+
