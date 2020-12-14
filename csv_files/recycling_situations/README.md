@@ -1,4 +1,4 @@
-###File Descriptions
+### File Descriptions
 
 **"all_recycling_situtaions"**
 how respondents are likely to dispose in various situations with added likert-scale values (0=NA, 1=Extremely unlikely, 5=Extremely likely)
