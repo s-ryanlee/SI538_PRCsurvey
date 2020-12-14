@@ -1,4 +1,6 @@
-# README
+### README
+
+File Descriptions
 
 "current_info_dummy"
 how survey respondents currently recieve recycling related information from the city of Lansing 
